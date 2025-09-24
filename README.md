@@ -2,47 +2,35 @@
 
 A Model Context Protocol (MCP) server that provides deployment and system management capabilities to Claude Desktop.
 
-This is a test deployment from repo [j2clark/MCP](https://github.com/j2clark/MCP)
+## Quick Start
 
-## Prerequisites
+Choose your setup path:
 
-- Python 3.8+
-- Git
-- uvx (via `pip install uv` or `choco install uv`)
+### Simple Installation
+Just want to use the server? → **[CLAUDE_DESKTOP_SETUP.md](CLAUDE_DESKTOP_SETUP.md)**
+- Basic Claude Desktop configuration
+- Windows troubleshooting
+- Quick installation guide
 
-## Installation
+### Development Setup
+Need full development environment? → **[WINDOWS_WSL_SETUP.md](WINDOWS_WSL_SETUP.md)**
+- Complete WSL + Windows + Claude Desktop setup
+- PyCharm integration
+- Local development workflow
+- Comprehensive troubleshooting
 
-1. Add the following configuration to your Claude Desktop config file:
-   - **Windows**: `%APPDATA%\Claude\claude_desktop_config.json`
-   - **macOS**: `~/Library/Application Support/Claude/claude_desktop_config.json`
+## What This Server Provides
 
-```json
-{
-	"mcpServers": {
-		"mcpserver": {
-			"command": "uvx",
-			"args": [
-				"--from",
-				"git+https://github.com/j2clark/mcpserver.git",
-				"mcp-server"
-			]
-		}
-	}
-}
-```
+- Deployment management capabilities
+- System administration tools
+- Integration with Claude Desktop via Model Context Protocol
 
-2. Restart Claude Desktop
+## Repository
 
-## Verification
+This is a test deployment from [j2clark/MCP](https://github.com/j2clark/MCP)
 
-After restarting Claude Desktop, you should see the MCP server connection in the Claude interface. Test by asking Claude to use deployment-related functions.
+## Support
 
-## Windows Setup
-
-Windows users may encounter PATH and environment issues. See [WINDOWS.md](windows/WINDOWS.md) for detailed Windows-specific setup instructions and troubleshooting.
-
-## Troubleshooting
-
-- Ensure uvx and git are in your system PATH
-- Restart Claude Desktop after configuration changes
-- Check Claude Desktop logs for connection errors
+- **Installation issues**: See [CLAUDE_DESKTOP_SETUP.md](CLAUDE_DESKTOP_SETUP.md)
+- **Development setup**: See [WINDOWS_WSL_SETUP.md](WINDOWS_WSL_SETUP.md)
+- **Windows-specific issues**: Both guides include Windows troubleshooting
