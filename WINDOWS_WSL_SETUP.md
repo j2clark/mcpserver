@@ -1,5 +1,4 @@
-# Complete MCP Development Setup Guide
-## WSL + Windows + Claude Desktop
+# Environment Setup: WSL + Windows + Claude Desktop
 
 This guide consolidates lessons learned from extensive troubleshooting to provide a clean setup for MCP development using WSL with Claude Desktop on Windows.
 
